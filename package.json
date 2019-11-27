@@ -1,15 +1,14 @@
 {
-  "name": "myportfolio",
+  "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://jrreactdev.github.io/react-portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "component": "^1.1.0",
     "font-awesome": "^4.7.0",
-    "header": "^0.1.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-navigation": "2.0.1",
     "react-popper": "0.9.2",
     "react-scripts": "2.1.5",
     "reactstrap": "5.0.0",
@@ -19,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
